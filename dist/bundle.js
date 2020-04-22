@@ -94,7 +94,27 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (showAlert);\r\n\r\nfunction showAlert() {\r\n\tconsole.log('this is alert!')\r\n}\n\n//# sourceURL=webpack:///./src/alert.js?");
+__webpack_require__.r(__webpack_exports__);
+var _console;
+
+/* harmony default export */ __webpack_exports__["default"] = (showAlert);
+
+function showAlert() {
+  console.log('this is alert!');
+}
+
+var aa = ['aa', 'bb', 'cc'];
+
+(_console = console).log.apply(_console, aa);
+
+var promise = new Promise(function (resolve, reject) {
+  setTimeout(function (_) {
+    return resolve("done");
+  }, 2000);
+});
+promise.then(function (data) {
+  console.log(data);
+});
 
 /***/ }),
 
@@ -106,7 +126,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _alert__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./alert */ \"./src/alert.js\");\nconst root = document.createElement(\"div\")\r\nroot.innerHTML = `<p>Hello Webpack...!</p>`;\r\ndocument.body.appendChild(root);\r\n// require('alert.js');\r\n\r\n\r\nObject(_alert__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _alert__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./alert */ "./src/alert.js");
+var root = document.createElement("div");
+root.innerHTML = "<p>Hello Webpack...!</p>";
+document.body.appendChild(root); // require('alert.js');
+
+
+Object(_alert__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
 /***/ })
 
