@@ -1,0 +1,19 @@
+{
+  "name": "webpack-test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "webpack": "4.43.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
