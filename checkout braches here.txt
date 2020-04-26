@@ -1,0 +1,7 @@
+"git checkout master"
+"git checkout stage1-js-only"
+"git checkout stage2-babel-for-js"
+"git checkout stage4-basic-react"
+"git checkout stage5-HMR-basic"
+"git checkout stage6-deleted-previous-app"
+"git checkout stage7" [This is minimal approach to the previously deleted App.. This is also using HMR with Node, but WDS is removed]

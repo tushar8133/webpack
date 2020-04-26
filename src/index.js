@@ -1,7 +1,0 @@
-require("webpack-hot-middleware/client");
-import showAlert from './alert';
-import './ReactApp';
-
-showAlert();
-
-if (module.hot) { module.hot.accept(); }
