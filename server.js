@@ -11,4 +11,4 @@ app.use(require("webpack-hot-middleware")(compiler));
 
 app.use(express.static("./src"));
 
-app.listen(3000, () => console.log('Example app listening on port 3000\nWait for webpack...'));
+app.listen(8080, () => console.log('Server listening on port 8080 ! Please Wait for webpack...'));
