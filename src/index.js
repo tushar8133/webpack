@@ -1,4 +1,3 @@
-require("webpack-hot-middleware/client");
 import showAlert from './alert';
 import './ReactApp';
 
